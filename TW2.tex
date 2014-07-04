@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Classic Lined Title Page 
+% Classic Lined Title Page
 % LaTeX Template
 % Version 1.0 (27/12/12)
 %
@@ -11,10 +11,10 @@
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-% 
+%
 % Instructions for using this template:
-% This title page compiles as is. If you wish to include this title page in 
-% another document, you will need to copy everything before 
+% This title page compiles as is. If you wish to include this title page in
+% another document, you will need to copy everything before
 % \begin{document} into the preamble of your document. The title page is
 % then included using \titleAT within your document.
 %
@@ -48,7 +48,9 @@
 \usepackage{lastpage}
 \usepackage{ragged2e}
 \usepackage{listingsutf8}
-\usepackage{mathtools}
+\usepackage{mathtools}\usepackage{chngcntr}
+\usepackage{float}
+\usepackage{longtable}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -163,6 +165,8 @@
 \pagestyle{empty}
 \newpage
 \tableofcontents
+\newpage
+\listoffigures
 \clearpage
 
 %----------------------------------------------------------------------------------------
@@ -178,7 +182,7 @@
 \rfoot{\thepage/\pageref{LastPage}}
 \lfoot{\authorName}
 
-\pagestyle{fancy}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -189,13 +193,14 @@
 
 \include{prefazione}
 
+\pagestyle{fancy}
+
 \include{abstract}		% capitolo 1
 \include{6w}			% capitolo 2
-\include{tempo}			% capitolo 3
-\include{contenuto}		% capitolo 4
-\include{pubblicita}	% capitolo 5
-\include{ricerca}		% capitolo 6
-\include{valutazione}	% capitolo 7
+\include{contenuto}		% capitolo 3
+\include{pubblicita}	% capitolo 4
+\include{ricerca}		% capitolo 5
+\include{valutazione}	% capitolo 6
 
 %\appendix
 
